@@ -1,0 +1,34 @@
+Assignment #5: Mapping Sea Level Changes
+Overview
+For this assignment, you will use QGIS to (1) perform sea level change analysis using a high-resolution digital elevation model and (2) create a map that clearly and intuitively presents areas of potential inundation for at least three sea level change scenarios of varying severity.  You are free to select any study area aside from the area covered in the demonstration videos (the area surrounding Savannah, Georgia in the United States).  Through completing this mapping exercise, you will learn the following GIS mapping and analysis techniques:
+
+Retrieval of high-resolution coastal topobathymetric digital elevation models (DEMs) from official sources;
+Interpretation and basic processing of raster elevation datasets;
+Conversion vertical units of elevation in DEMs using raster calculation;
+Application of boolean expressions using raster calculation to (1) highlight areas currently above and below sea level and (2) model potential areas of inundation resulting from changes in sea level;
+Use of map algebra to compare areas currently above/below sea level with results of modeling sea level change;
+Visualization strategies that highlight areas of potential inundation as a result of future sea level increases resulting from climate change.
+Outcomes
+For this assignment, you will submit a PDF document containing a map and a write-up in accordance with the requirements listed herein.
+
+The map that you create with QGIS Layouts should contain the following contents:
+
+Layers indicating potential inundation areas for moderate, severe, and extreme sea level rise, visually superimposed such that the most vulnerable areas appear darkest (hint: use "Multiply" blending mode for layer rendering);
+One of the following:
+A basemap that provides political boundaries (states, counties, countries, etc.) and useful reference information, including populated places (we recommend using the appropriate ESRI base layer from the QuickMapServices plugin), OR;
+Custom vector layer(s), appropriately labeled, providing political boundaries and useful reference information;
+A satellite/aerial imagery basemap covering the full extent of the map (again, we recommend using the ESRI Satellite layer from the QuickMapServices plugin);
+Common map elements, including a neat line (frame around map contents), a title, a legend containing intelligible labels for all layers that should be included; scale bar with user-friendly interval and caption containing representative fraction (RF) scale and data sources.
+Likewise, your map should:
+
+Be structured using Letter (8.5 in by 11 in) or A4 (210 mm by 297 mm) page size and either landscape or portrait page orientation, whichever is more appropriate for your selected area;
+Reflect use of either (1) the Web Mercator map projection, assuming you are using tiled basemap imagery with labels, or (2) a map projection (coordinate reference system) that is appropriate for the geographic area you have selected;
+Be exported from QGIS as a PDF file, with vector features preserved as vector shapes to the greatest extent possible.
+The write-up for this lab (minimum of 300 words) should address the following:
+
+What source(s) informed your decision to select the sea level change scenarios shown on your map?  Please describe what you learned about sea level change, and cite your source(s) using a recognized citation format.
+What do the sea level change scenarios that you modeled tell us about the potential for climate change-related coastal flooding in the area covered in your map?
+Instructions
+Begin by watching the Week 5 videos on the QGIS Video Library page.  The videos provide a general walkthrough of the steps required to complete this activity and replicate the sample map posted below for any coastal region of your choice.  Due to issues related to resolution of coastal digital elevation data, we recommend selecting an area covered by a NOAA NCEI 1/3-arc-second coastal DEM OR a CoNED TBDEM.  Keep in mind that CoNED TBDEM files tend to be quite large (exceeding 2GB per file), so processing time might increase significantly and more storage space will be required on your computer (though detail/resolution of output will be superior to most other lower-resolution data sources.)
+
+Note that it is your responsibility to define what levels constitute moderate, severe, and extreme sea level rise.  Make sure to take some time to review current scientific research on this issue and make your decisions accordingly.

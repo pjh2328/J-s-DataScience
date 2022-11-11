@@ -1,0 +1,53 @@
+Assignment #8: Map Projections and Cartographic Design
+Overview
+This assignment consists of two parts, both of which will involve the use of different map projections and the use of cartographic design best practices.  For the first part, you will make a series of four very simple world maps showing the appearance of Tissot indicatrices using a different global projection / coordinate system for each map, and for each map you will also answer several related questions about the appearance of the map and the indicatrices within the corresponding projection.  For the second part of the assignment, which focuses more specifically upon cartographic design, you will use QGIS to create a topographic map of the area surrounding Mount Whitney, the highest mountain in the U.S. state of California.
+
+Learning Objectives
+Upon completion of this assignment, you will have learned:
+
+About the practical consequences and implications of the use of various map projections given the distortions and transformations inherent to all projections and coordinate systems;
+Techniques for assessing preservation of shape, surface area, and distance using Tissot's indicatrix;
+Principles associated with selecting an appropriate map projection for a given project;
+How to apply different geographic coordinate systems and map projections to QGIS projects;
+Techniques for creating visually effective maps using multiple vector and raster data layers, and;
+Raster data symbology techniques, including Hillshade and Contour operations.
+Requirements and Steps
+PART 1:  Exploring Projections with Tissot's Indicatrix
+
+For Part 1 of the assignment, you will create four maps, each displaying the same data using a different coordinate system, with the objective of exploring how different coordinate systems distort shape, area, and distance.  Each map that you create will show Tissot indicatrices superimposed upon countries and territories, and you will be able to make inferences about distortions to the aforementioned geometric properties caused by any given map projection.  Your maps should use the following four coordinate systems:
+
+WGS 84 (non-projected geographic coordinate system)
+World Mercator (projected coordinate reference system)
+Mollweide (projected CRS)
+Robinson (projected CRS)
+Your maps should contain the following layers from the GeoPackage provided on the course website, all symbolized appropriately as indicated in the example map below:
+
+Title reflecting the map projection used in the map;
+Tissot's indicatrix (circles of a radius of 300km placed every 20 degrees of latitude and longitude);
+Graticule (lines of latitude and longitude);
+Countries and territories;
+The extent of the earth (meant to provide a background for the maps and indicate the shape of the coordinate system).
+For each map (each of which will correspond to one of the coordinate systems listed above), answer the following questions:
+
+Based on the appearance of Tissot's indicatrices and any information you might be able to read online about the coordinate system, what geometric properties (if any) does this coordinate system preserve?
+Where in the map is distortion most noticeable and/or problematic?
+Based on your observations of this map projection's characteristics, in what cases could this projection be appropriately used?  In what cases should use of this projection be avoided?
+Sample map showing Tissot's indicatrices
+
+Above:  Sample map showing Tissot's indicatrices, created with QGIS.
+
+PART 2:  Cartographic Design and Topographic Mapping
+
+Fort Part 2 of the assignment, you will use QGIS to create a high-quality topographic map of the area surrounding Mount Whitney, the highest mountain in the state of California.  The map that you create with the QGIS Layouts interface should contain the following contents:
+
+Two raster layers based on DEM: one showing hillshade and the other showing elevation, blended using the overlay image blending mode to create attractive base layer;
+Vector layer containing contours at a 200 to 1,000 foot contour interval, labeled appropriately for the scale of the map;
+Vector layer containing roads, labeled with appropriate highway shields for major highways;
+Vector layer containing town locations, labeled with town/place name;
+Annotation marking the location and elevation of Mount Whitney's summit;
+Additionally, it is expected that this map will exhibit the following characteristics:
+
+Project coordinate system should the be the optimal Universal Transverse Mercator (UTM) coordinate reference system for the region covered by the map;
+Clear and appropriate typography in labeling and map elements;
+At least letter (8.5 in by 11 in) page size (can be larger page format if you prefer).
+Your assignment must be submitted as a single PDF file.  All maps and components of the assignment should be combined into a single file.

@@ -1,0 +1,31 @@
+Assignment #3: Reference Mapping
+
+Overview
+For this mapping activity, you will use QGIS to create two high-quality reference maps: one showing countries within a region of your choice, and the others showing features within a country of your choice.  Through completing this mapping exercise, you will learn the following GIS mapping techniques:
+
+Techniques for creating visually effective maps using multiple vector data layers;
+Basic cartographic design techniques, including the essentials of figure ground, representation, color, and typography;
+Vector data symbolization techniques, including color, labeling, and sizing;
+How to use QGIS Layouts to create attractive print-ready maps containing common map elements, including titles, legends, scale bars, and other annotations.
+Outcomes
+You are responsible for creating two separate maps, which shall be submitted together in one PDF document (please export both maps at full resolution and join them together into a single PDF; do not insert images into a Word document.)
+
+One of your maps must be rendered at the scale of a world region (e.g., Central America, Western Europe, Southeast Asia, etc.) and the following characteristics are required:
+
+This map should contain three layers: country boundaries, rivers, and capital cities;
+Countries should be visually differentiated by fill color, using one of the appropriate pre-defined attribute fields to ensure that no neighboring countries share the same fill color;
+Countries should be labeled by name or abbreviation, and labels that are sub-optimally placed or missing using the QGIS automated label placement system should be manually adjusted or placed;
+The other map be rendered at the scale of a country (e.g., Mexico, China, France, etc.) and the following characteristics are required:
+This map should contain the following layers: country boundaries, rivers, urban areas, populated places, and capital cities;
+Your selected country should be represented differently from all other visible countries in the interest of establishing appropriate figure ground and visual hierarchy;
+Capital cities should be labeled by name, and rivers should be labeled by name using serif font labels that follow the curvature of the rivers;
+The maps that you create with QGIS Layouts should:
+
+Include layers represented with appropriate feature symbology;
+Be exported from QGIS as a Letter-sized page layout containing basic map elements, including your name, a title, a neat line, a legend, a scale bar, and a written representative fraction scale (should be a clean, round number);
+Reflect visual differentiation of oceans (use background color) and landmasses;
+Include labeled vector layers as required (countries on one map; capital cities and rivers on the other);
+Reflect use of map projections (coordinate reference systems) that are appropriate for the geographic areas you have selected.
+Instructions
+
+Begin by watching the videos for this unit on the QGIS Video Library page.  The videos provide a general walkthrough of the steps required to complete this activity for a region and a country of your choice.  Keep in mind that some data may not be available for areas outside North America and Europe.

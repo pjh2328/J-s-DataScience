@@ -1,0 +1,62 @@
+Assignment #4: Thematic Mapping with QGIS
+Overview
+Maps of election results are frequently used to report the performance of candidates or parties, and to understand political behavior across a democracy.  In the United States, states where support for Republicans is greater than support for Democrats are often labeled as "red states".  Conversely, states where support for Democrats is greater than support for Republicans are labeled "blue states".  Maps about a particular topic or 'theme' are generally referred to as thematic maps.  Choropleth maps refer to maps that color or shade areas (e.g., countries, states, counties) according to the values of a variable of interest (e.g., % Republican vote, number of Starbucks, ratio of males to females), and are a very common type of thematic map.   
+
+For this assignment you will learn and apply three distinctive thematic mapping techniques (choropleth, diagram, and dot density mapping) to creating four visualizations of the same election results data.
+
+
+
+https://moodle2.sscnet.ucla.edu/pluginfile.php/745566/mod_assign/intro/TrumpClinton2016.png
+
+Source: New York Times
+
+Learning Objectives
+Through completing this mapping exercise, you will learn the following GIS mapping techniques:
+
+Techniques for visually representing qualitative data using choropleth symbolization;
+Cartographic design techniques for choropleth mapping, including use of color and visual hierarchy;
+Handling of challenging labeling situations, including manual label placement manipulation and the use of leader lines;
+Custom (expression-based) vector feature labeling techniques;
+Data classification methods and strategies for selecting appropriate classification modes and color schemes;
+Techniques for creating attractive print-ready thematic maps containing common map elements.
+Requirements
+For this assignment you will be required to:
+
+Create the following four (4) thematic maps, following the instructions below using the data provided with the assignment:
+MAP #1:  The iconic "red state / blue state" choropleth map that appears so frequently in the context of United States elections;
+MAP #2   A choropleth map of vote margins at the county level;
+MAP #3:  A state-level diagram map using scaled pie chart symbols representing the distribution of the popular vote, and;
+MAP #4:  A dot density map which will use randomly-distributed points (confined to county boundaries) to represent both the density and the voting behavior of voters throughout the United States.
+Embed the four maps in your PDF document;
+Write thoughtful responses to questions/topics listed below.
+In your write-up for this lab (minimum of 500 words), discuss the following:  
+
+the patterns of voting behavior reflected in the maps you created;
+the importance of scale and the unit of analysis when viewing and analyzing choropleth maps;
+to what extent you think the "red state / blue state" coloring is helpful in understanding the electoral geography of the U.S.  
+Draw upon and cite no fewer than three external sources that help you to understand the electoral patterns.
+
+MAP #1, the red states / blue states map that you create with QGIS Layouts, should contain the following contents:
+
+A choropleth polygon layer representing the lower 48 states of the United States, wherein states won by the Democratic candidate are represented by a blue fill color, and states won by the Republican candidate are represented by a red fill color.
+Labels that include both the state's two-letter postal abbreviation and the number of electoral votes (not total votes) allocated to the state.
+MAP #2, the county-level vote margin map, should contain the following contents:
+A choropleth polygon layer representing the counties of the lower 48 states of the United States, wherein counties are represented using fill colors from a diverging red-blue color scheme on the basis of attribute values from the field indicating margin of victory (vote percentages).  The layer should use non-obtrusive line stroke width and color in order to highlight the variation in fill color.
+A polygon layer with no fill color showing state boundaries (should be placed above county boundaries).
+MAP #3, the state-level diagram map, should contain the following contents:
+A pie chart diagram layer (generated using the Diagram interface in the Layer Properties for the state-level layer) where (1) symbol size is scaled by popular vote totals to a desired maximum and minimum diameter and (2) the pieces of the pie chart correspond to total votes cast for each candidate.  Pie pieces should be filled using colors traditionally associated with the political parties.
+As in the graduated symbol map, a visually unobtrusive polygon layer showing the U.S. state which should serve as a background to the diagram map.  Note that (1) you may wish to use very light red/blue fill colors instead of gray, and (2) you should be able to specify these properties as the symbology for the state layer itself; you will likely not need to make a copy of it as the Diagram tool will draw on top of the specified symbology.
+A manually-created legend indicating pie slice colors and mentioning that diagram sizes are scaled on the basis of total votes.
+MAP #4, the county-level dot density map, should contain the following contents:
+
+Two random point layers (one for Democratic voters, one for Republican voters), with a suggested ratio of 500 votes per one point (feel free to adjust).  Points should be very small when rendered on the map (sub-millimeter) in order to allow for density to be perceptible throughout the map.  Points should use fill colors traditionally associated with each political party, and no line stroke should be applied.
+A visually unobtrusive polygon layer showing the U.S. states.  This layer should use no fill color and a gray line stroke color and be placed on top of the point layers.
+A manually-created legend indicating point colors and noting the ratio of voters per point (e.g., "Each point on this map represents 500 votes cast for the respective candidate.")
+Likewise, ALL of your maps should:
+
+Contain common map elements, including a neat line (frame around map contents), a title, and a legend containing intelligible labels for all layers that should be included.
+Be structured using Letter (8.5 in by 11 in) or A4 (210 mm by 297 mm) page size and landscape page orientation, given the horizontal elongation of the United States;
+Reflect appropriate application of cartographic design techniques in all elements and facets of the map;
+Be exported from QGIS as a PDF file, with all vector features preserved as vector shapes.
+We suggest merging multiple PDF files together when submitting this assignment since it will best preserve map quality.  Do not embed low-resolution screenshots of the maps in a Word document.
+Note:  If your assignment is not submitted as a PDF, no credit will be awarded.
